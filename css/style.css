@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h3,h3,h4,h5,h6,p,span,img{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: white;
+    /* 
+    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
+     */
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> heading part <=---------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+header{
+    background-color: #0872b9;
+    padding: 10px 0;
+}
+
+header .row p{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.container .icon{
+    display: flex;
+    column-gap: 40px;
+    justify-content: end;
+}
+
+.container .icon i{
+    font-size: 18px;
+    color: #ffffff;
+    transition: all.4s;
+}
+
+.container .icon i:hover{
+    color: #070707;
+}
+
+.container .icon .active{
+    color: #070707;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> logo part <=---------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+#logo_part{
+    padding: 20px 0;
+}
+
+.navbar{
+   padding: 0;
+}
+
+.collapse .navbar-nav .nav-item a{
+    text-transform: capitalize;
+    transition: all .4s;
+}
+
+.collapse .navbar-nav .nav-item a:hover{
+    color: #0872b9;
+}
+
+.collapse .navbar-nav .nav-item .active{
+    color: #0872b9;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> banner part <=---------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+#banner_part{
+    background: url(../pics/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#banner_part .text{
+    text-align: right;
+    padding: 88px 0;
+    color: white;
+}
+
+#banner_part::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: -1;
+}
+
+#banner_part .text h3{
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+#banner_part .text h1{
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 20px;
+}
+
+#banner_part .text p{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    margin: 20px 0 30px;
+    line-height: 26px;
+}
+
+
+#banner_part .text a{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 10px 30px;
+}
+
+
+#banner_part .text a:hover{
+    border: 1px solid #0872b9;
+    background-color: #0872b9;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> about part <=---------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+.container .top{
+    margin: 30px 35%;  
+}
+
+.container .top h3{
+    font-size: 24pt;
+    color: black;
+    font-weight: 600;
+    /* text-align: center; */
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.container .top img{
+    position: absolute;
+    width: 100px;
+    /* left: 45%;
+    top: 100%;
+    transform: translateX(-45%); */
+}
+
+#about .container .row .text{
+    padding: 40px 0;
+}
+
+#about .container .row img{
+    width: 100%;
+}
+
+#about .container .row .text p{
+    text-align: justify;
+    font-size: 13.5px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+}
+
+#about .container .row .text .one{
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> service part <=---------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+#Service .container .row .main{
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 50px 10px 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#Service .container .row .main:hover{
+    box-shadow: 1px 1px 10px gray;
+}
+
+
+#Service .container .row .main .circle{
+    height: 95px;
+    width: 95px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 35%;
+    top: -30%;
+}
+
+
+#Service .container .row .main .circle .circle1{
+    height: 78px;
+    width: 78px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Service .container .row .main h3{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+
+}
+
+#Service .container .row .main p{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> portfolio part <=------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+#portfolio .row .col-lg-3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#portfolio .row .img{
+    position: relative;
+}
+
+#portfolio .row .img img{
+    width: 100%;
+}
+
+#portfolio .row .img::after{
+    content: "";
+    transition: .4s;
+}
+
+#portfolio .row .img:hover::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    left: 0;
+    top: 0;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> Our Team part <=------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+#Our_team .container .row .main{
+    position: relative;
+}
+
+#Our_team .container .row .main:hover{
+    box-shadow: 1px 1px 10px gray;
+}
+
+#Our_team .container .row  h2{
+    font-family: "Oswald", sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#Our_team .container .row  h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+#Our_team .container .row .main p{
+    margin-top: 15px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    line-height: 44px;
+    transition: all .4s;
+}
+
+#Our_team .container .row .main p:hover{
+    background-color: #5bc5f4;
+    border: 1px solid #5bc5f4;
+}
+
+#Our_team .container .row .main .main1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+    
+
+#Our_team .container .row .main:hover .main1{
+    width: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#Our_team .container .row .one:hover h2
+/* ,#Our_team .container .row .one:hover h4 */
+{
+    color: #60c7f5;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> testemonial part <=----------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+#review .container .row .img{
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+
+#review .container .row .text{
+    text-align: center;
+    padding: 20px 30px 20px 10px;
+    background-color: #f1f1f1;
+}
+
+#review .container .row .text h2{
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#review .container .row .text h4{
+    text-transform: capitalize;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+}
+
+#review .container .row .text p{
+    font-family: "Oswald", sans-serif;
+    font-size: 13.5px;
+    line-height: 26px;
+}
+
+#review .container .row .text .star{
+    color: #5bc5f4;
+    margin: 10px 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> footer part <=----------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+#details{
+    margin-top: 60px;
+    padding: 30px 0 50px;
+    background-color: rgba(0,0,0,.6);
+}
+
+
+#details .container .row .main img{
+    margin-bottom: 20px;
+    color: white;
+}
+
+#details .container .row .main p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13.5px;
+    line-height: 26px;
+    color: white;
+    
+}
+
+#details .container .row .main .one{
+    margin-top: 20px;
+}
+
+#details .container .row .contact .main{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 30px;
+}
+
+#details .container .row .contact h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+#details .container .row .contact p{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+#details .container .row .contact .phone{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #5bc5f4;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+#details .container .row .links h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+#details .container .row .links .main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#details .container .row .links .main .left ul,
+#details .container .row .links .main .right ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
+
+#details .container .row .links .main .left ul li a,
+#details .container .row .links .main .right ul li a{
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+#details .container .row h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#details .container .row .image{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------=> footer part <=----------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+#footer{
+    padding: 15px 0;
+    background-color: #555555;
+}
+
+#footer h3{
+    font-size: 13px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+#footer span{
+    color: #5bc5f4;
+}
+

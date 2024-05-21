@@ -1,0 +1,66 @@
+#Our_team .container .row .main{
+    position: relative;
+}
+
+#Our_team .container .row .main:hover{
+    box-shadow: 1px 1px 10px gray;
+}
+
+#Our_team .container .row  h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#Our_team .container .row  h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+#Our_team .container .row .main p{
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    line-height: 35px;
+}
+
+#Our_team .container .row .main p:hover{
+    background-color: #5bc5f4;
+    border: 1px solid #5bc5f4;
+}
+
+#Our_team .container .row .main .main1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+    
+
+#Our_team .container .row .main:hover .main1{
+    width: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#Our_team .container .row .one:hover h2,
+#Our_team .container .row .one:hover h4{
+    color: #60c7f5;
+}

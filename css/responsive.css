@@ -1,0 +1,71 @@
+
+
+/* ==================================-> Banner part <-====================================== */
+@media (max-width: 575.98px){
+    #banner h1 {
+        font-size: 35px;
+    }
+    #banner p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+    .navbar {
+        position: static;
+        background-color: aqua;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+    #banner .banner_part {
+        padding: 50px 0 0;
+    }
+    .button {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .slider ul li button {
+        height: 12px;
+        width: 12px;
+        border: 2px solid #4756DF;
+    }
+    #banner .slider1 {
+        height: 410px;
+    }
+    .slider ul {
+        bottom: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-toggler {
+        color: #6A4DF4;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar .nav-link {
+        font-size: 16px;
+        line-height: 26px;
+        color: #070707;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        justify-content: space-around;
+    }
+
+    /* ====================================-> succes part <-================================= */
+    #succes .row .left h2 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    #succes .row .left h3 {
+        font-size: 13px;
+    }
+
+}
